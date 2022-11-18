@@ -11,3 +11,4 @@ RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|
 RUN yum -y install java
 CMD /bin/bash
 EXPOSE 8080
+CMD ["/opt/tomcat/bin/catalina.sh", "run"]
